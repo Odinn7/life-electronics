@@ -1,0 +1,14 @@
+.text {
+
+    display: flex;
+    flex-direction: column;
+    
+    .firstText{
+        display: flex;
+    }
+
+    .spanText {
+        display: flex;
+        width: 50%;
+    }
+}
