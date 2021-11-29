@@ -1,11 +1,1 @@
-.text {
-  display: flex;
-  flex-direction: column;
-}
-.text .firstText {
-  display: flex;
-}
-.text .spanText {
-  display: flex;
-  width: 50%;
-}
+.text{display:flex;flex-direction:column;background:url(../../assets/images/headImg.jpg);background-repeat:no-repeat;background-size:100%;background-position:center;background-clip:border-box;width:100%;height:100%;padding:200px 0 300px 0px}.text .firstText{display:flex;color:#fff;padding-left:250px;font-size:35px}.text .spanText{display:flex;width:35%;color:#fff;padding-left:250px;font-size:25px}

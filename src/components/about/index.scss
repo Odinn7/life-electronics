@@ -2,13 +2,27 @@
 
     display: flex;
     flex-direction: column;
+    background: url(../../assets/images/headImg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-clip: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 200px 0 300px 0px;
     
     .firstText{
         display: flex;
+        color: #FFFFFF;
+        padding-left: 250px;
+        font-size: 35px;
     }
-
+    
     .spanText {
         display: flex;
-        width: 50%;
+        width: 35%;
+        color: #FFFFFF;
+        padding-left: 250px;
+        font-size: 25px;
     }
 }
