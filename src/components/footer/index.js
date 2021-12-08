@@ -1,10 +1,21 @@
 import React from "react";
-import './index.css'
+import "./index.css";
 
 export const Footer = () => {
-    return(
-        <div className='footer'>
-            Life Electronics © 2021. Bütün hüquqları qorunur.
-        </div>
-    )
-}
+  return (
+    <div className="footer">
+      <a>
+        <img></img>
+      </a>
+      <a>
+        <img></img>
+      </a>
+      <a>
+        <img></img>
+      </a>
+      <a>
+        <img></img>
+      </a>
+    </div>
+  );
+};
