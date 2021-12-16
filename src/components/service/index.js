@@ -1,0 +1,31 @@
+import React from "react";
+import service from "../../assets/images/service.png";
+import programming from "../../assets/images/programming.png";
+import consulting from "../../assets/images/consulting.png";
+import { ServiceBtn } from "../serviceBtn";
+import { ServiceWrapper, ServicserviceCard, ServiceCardTxt, ServiceImg } from "./styled";
+import "./styled";
+
+export const Service = () => {
+  return (
+    <ServiceWrapper id="services">
+      <ServicserviceCard>
+        <ServiceImg src={service} />
+        <ServiceCardTxt>It service</ServiceCardTxt>
+        <ServiceBtn />
+      </ServicserviceCard>
+
+      <ServicserviceCard>
+        <ServiceImg src={programming} />
+        <ServiceCardTxt>Proqramming</ServiceCardTxt>
+        <ServiceBtn />
+      </ServicserviceCard>
+
+      <ServicserviceCard>
+        <ServiceImg src={consulting} />
+        <ServiceCardTxt>It consulting</ServiceCardTxt>
+        <ServiceBtn />
+      </ServicserviceCard>
+    </ServiceWrapper>
+  );
+};

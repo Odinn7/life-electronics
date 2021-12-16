@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Arimo;
+    src: url("../../assets/fonts/Arimo/arimo.woff");
+}
+.mainPageStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 335px 0 0 90px;
+
+    .mainText {
+        display: flex;
+        color: white;
+        font-family: Arimo;
+        font-size: 96px;
+        margin-bottom: 15px;
+    }
+
+    Button {
+        background-color: #474747;
+        border: none;
+    }
+}

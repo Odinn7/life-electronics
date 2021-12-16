@@ -1,11 +1,20 @@
 import React from "react";
+import mainLogo from "../../assets/images/logo.png";
+import { Button } from "../buttons";
 import "./index.css";
-import mainLogo from '../../assets/images/mainLogo.png'
 
 export const Header = () => {
   return (
-    <div className="header">
-      <div className="companyName"><img src={mainLogo} style={{width: 280, margin: "70px 0 0 0" }}/></div>
-    </div>
+    <header>
+      <div className="companyLogo">
+        <img src={mainLogo} />
+      </div>
+      <div className="buttonsContainer">
+        <Button btnText="Şirkət haqqında" goTo="#aboutCompany" />
+        <Button btnText="Xidmətlərimiz" goTo="#services" />
+        <Button btnText="Layihəmiz" goTo="#projects" />
+        <Button btnText="Partnyolarimiz" goTo="#partners" />
+      </div>
+    </header>
   );
 };
