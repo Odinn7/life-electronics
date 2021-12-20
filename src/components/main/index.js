@@ -1,12 +1,13 @@
 import React from "react";
 import { Button } from "../buttons";
-import "./index.css";
+import { MainPageWrapper, MainText } from "./styled";
+import "./styled";
 
 export const MainPage = () => {
   return (
-    <div className="mainPageStyle">
-      <div className="mainText">Life Electronics</div>
-      <Button btnText="Әlavә mәlumat" goTo='#aboutCompany'/>
-    </div>
+    <MainPageWrapper id="mainPage">
+      <MainText>Life Electronics</MainText>
+      <Button btnText="Әlavә mәlumat" goTo="#aboutCompany" />
+    </MainPageWrapper>
   );
 };

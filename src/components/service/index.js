@@ -2,8 +2,14 @@ import React from "react";
 import service from "../../assets/images/service.png";
 import programming from "../../assets/images/programming.png";
 import consulting from "../../assets/images/consulting.png";
-import { ServiceBtn } from "../serviceBtn";
-import { ServiceWrapper, ServicserviceCard, ServiceCardTxt, ServiceImg } from "./styled";
+import { Button } from "../buttons";
+import {
+  ServiceWrapper,
+  ServicserviceCard,
+  ServiceCardTxt,
+  ServiceImg,
+} from "./styled";
+
 import "./styled";
 
 export const Service = () => {
@@ -12,19 +18,19 @@ export const Service = () => {
       <ServicserviceCard>
         <ServiceImg src={service} />
         <ServiceCardTxt>It service</ServiceCardTxt>
-        <ServiceBtn />
+        <Button btnText="Әlavә" border color left top hoverColor />
       </ServicserviceCard>
 
       <ServicserviceCard>
         <ServiceImg src={programming} />
         <ServiceCardTxt>Proqramming</ServiceCardTxt>
-        <ServiceBtn />
+        <Button btnText="Әlavә" border color left top hoverColor />
       </ServicserviceCard>
 
       <ServicserviceCard>
         <ServiceImg src={consulting} />
         <ServiceCardTxt>It consulting</ServiceCardTxt>
-        <ServiceBtn />
+        <Button btnText="Әlavә" border color left top hoverColor />
       </ServicserviceCard>
     </ServiceWrapper>
   );

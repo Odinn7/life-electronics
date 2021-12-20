@@ -19,7 +19,7 @@ export const ServicserviceCard = styled.div`
     width: 20vw;
     height: 45vh;
     box-shadow: 10px 10px 15px 0 #888888;
-    transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms;
+    transition: all 3s cubic-bezier(0, 0, 1, 1) 500ms;
   }
 `;
 

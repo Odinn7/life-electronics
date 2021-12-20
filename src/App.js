@@ -5,13 +5,15 @@ import { About } from "./components/about";
 import { Service } from "./components/service";
 import { Projects } from "./components/projects";
 import { Partners } from "./components/partners";
+import { BottomButton } from "./components/bottomButton";
 
-import './index.css'
+import "./index.css";
 
 const App = () => {
   return (
     <div>
       <Header />
+      <BottomButton returnToTop="#header" />
       <MainPage />
       <About />
       <Service />
@@ -20,6 +22,6 @@ const App = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
