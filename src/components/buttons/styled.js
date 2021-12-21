@@ -6,8 +6,7 @@ export const BtnURL = styled.a`
   }
 `;
 
-export const ButtonWrapper = () => {
-  return styled.button`
+export const ButtonWrapper = styled.button`
   && {
     display: flex;
     margin-right: ${(props) => (props.right ? "30px" : "")};
@@ -16,7 +15,6 @@ export const ButtonWrapper = () => {
     border: none;
   }
 `
-};
 
 export const ButtonText = styled.p`
   && {
