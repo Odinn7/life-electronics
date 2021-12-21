@@ -12,13 +12,14 @@ export const Button = ({
   top,
   background,
   hoverColor,
+  onClick,
 }) => {
 
   
 
   return (
     <BtnURL href={goTo}>
-      <ButtonWrapper right={right}>
+      <ButtonWrapper right={right} onClick={onClick}>
         <ButtonText
           color={color}
           border={border}

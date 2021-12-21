@@ -9,21 +9,30 @@ export const ServiceWrapper = styled.div`
     background-color: #f1f3f6;
   }
 `;
-export const ServicserviceCard = styled.div`
+export const ServiceCard = styled.div`
   && {
     background-color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 15px;
-    width: 20vw;
-    height: 45vh;
+    width: ${(props) => (props.isOpen ? "40vw" : "20vw")};
+    height: ${(props) => (props.isOpen ? "80vh" : "45vh")};
     box-shadow: 10px 10px 15px 0 #888888;
-    transition: all 3s cubic-bezier(0, 0, 1, 1) 500ms;
+    transition: all 1s cubic-bezier(0, 0, 1, 1) 500ms;
+    position: ${(props) => (props.isOpen ? "relative" : "")};
   }
 `;
 
-export const ServiceCardTxt = styled.div`
+export const ServiceCardText = styled.div`
+  && {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: Roboto;
+  }
+`;
+
+export const ServiceCardTitle = styled.div`
   && {
     margin-top: 20px;
     font-size: 2rem;

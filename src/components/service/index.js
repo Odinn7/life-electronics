@@ -1,37 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import service from "../../assets/images/service.png";
 import programming from "../../assets/images/programming.png";
 import consulting from "../../assets/images/consulting.png";
 import { Button } from "../buttons";
 import {
   ServiceWrapper,
-  ServicserviceCard,
-  ServiceCardTxt,
+  ServiceCard,
+  ServiceCardTitle,
   ServiceImg,
+  ServiceCardText,
 } from "./styled";
 
 import "./styled";
 
 export const Service = () => {
+
+  const [isOpenItService, setIsOpenItService] = useState(false);
+  const [isOpenProgramming, setIsOpenProgramming] = useState(false);
+  const [isOpenConsulting, setIsOpenConsulting] = useState(false);
+
   return (
     <ServiceWrapper id="services">
-      <ServicserviceCard>
+      <ServiceCard isOpen={isOpenItService}>
         <ServiceImg src={service} />
-        <ServiceCardTxt>It service</ServiceCardTxt>
-        <Button btnText="Әlavә" border color left top hoverColor />
-      </ServicserviceCard>
+        <ServiceCardTitle>It service</ServiceCardTitle>
+        <Button btnText="Әlavә" border color left top hoverColor onClick={() => setIsOpenItService(!isOpenItService)}/>
+      </ServiceCard>
 
-      <ServicserviceCard>
-        <ServiceImg src={programming} />
-        <ServiceCardTxt>Proqramming</ServiceCardTxt>
-        <Button btnText="Әlavә" border color left top hoverColor />
-      </ServicserviceCard>
+      <ServiceCard isOpen={isOpenProgramming}>
+        {isOpenProgramming ? <> <ServiceCardText> asdasdas</ServiceCardText> <Button btnText="Close" border color left top hoverColor onClick={() => setIsOpenProgramming(!isOpenProgramming)}/> </>: <><ServiceImg src={programming} />  <ServiceCardTitle>Proqramming</ServiceCardTitle> <Button btnText="Әlavә" border color left top hoverColor onClick={() => setIsOpenProgramming(!isOpenProgramming)}/></> } 
+        
+      </ServiceCard>
 
-      <ServicserviceCard>
+      <ServiceCard isOpen={isOpenConsulting}>
         <ServiceImg src={consulting} />
-        <ServiceCardTxt>It consulting</ServiceCardTxt>
-        <Button btnText="Әlavә" border color left top hoverColor />
-      </ServicserviceCard>
+        <ServiceCardTitle>It consulting</ServiceCardTitle>
+        <Button btnText="Әlavә" border color left top hoverColor onClick={() => setIsOpenConsulting(!isOpenConsulting)}/>
+      </ServiceCard>
     </ServiceWrapper>
   );
 };
