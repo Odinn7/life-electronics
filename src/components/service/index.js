@@ -27,13 +27,13 @@ export const Service = () => {
           <ServiceCardText> IT servis
             Life Electronics Şirkəti İT xidmətləri sahəsində fəaliyyəti istifadəçilərin ehtiyaclarının və tələbatlarının araşdırılması, öyrənilməsi və bunun əsasında müştərək texniki tapşırıq formalaşdırmaq üsulu ilə yanaşma prinsipləri üzərində qurulur.
             Bu yanaşmadan qaynaqlanan qarşılıqlı əməkdaşlıq mühitində İT infrastrukturun texniki dəstəyə və təkmilləşməyə ehtiyacı olan bir sıra sahələrində müayinə, rəy, həll, quraşdırma və təhvil vermə, genişləndirilmə, artırılma və yeniləşdirilmə tipli məsələlərin düzgün müəyyənləşdirilməsi və peşəkar həllini tapması mümkün olur.</ServiceCardText> 
-          <Button btnText="Close" border color left top hoverColor onClick={() => setIsOpenItService(!isOpenItService)}/>
+          <Button btnText="Close" border color  top hoverColor onClick={() => setIsOpenItService(!isOpenItService)}/>
         </>
          : 
         <>
           <ServiceImg src={service} />
           <ServiceCardTitle>It service</ServiceCardTitle> 
-          <Button btnText="Әlavә" border color left top hoverColor onClick={() => setIsOpenItService(!isOpenItService)}/>
+          <Button btnText="Әlavә" border color  top hoverColor onClick={() => setIsOpenItService(!isOpenItService)}/>
         </> 
         }
       </ServiceCard>
@@ -48,13 +48,13 @@ export const Service = () => {
             Onların yerli tələbata uyğunlaşdırılaraq yenidən istehsalı, quraşdırılması və texniki dəstəyinin təmin ediməsi Life Electronics Şirkətinin seçdiyi mühüm hədəflərdir.
             Bu istiqamətlərdə fəaliyyət hər bir sifarişçinin tələbatına uyğun olaraq fərdi qaydada tərtib edilir və münasib formada qurulur. 
             İstifadəçinin İT infrastrukturunu nəzarətdə saxlamaq və vaxtında yenilənmə tələb edən bütün mühüm qovşaqları infrastrukturun peşəkar təftişi yolu ilə qabaqcadan müəyyən edıə bilmək və bu qəbildən olan bir çox sırf peşəkar məsələlər İT sahəsində mükəmməl biliklərə yiyələnmiş və inkişafda olan İT komandanın məsləhət və köməyi ilə doğru həllini tapa bilər.</ServiceCardText>
-          <Button btnText="Close" border color left top hoverColor onClick={() => setIsOpenProgramming(!isOpenProgramming)}/>
+          <Button btnText="Close" border color  top hoverColor onClick={() => setIsOpenProgramming(!isOpenProgramming)}/>
         </>
           :
         <>
           <ServiceImg src={programming} />  
           <ServiceCardTitle>Proqramming</ServiceCardTitle> 
-          <Button btnText="Әlavә" border color left top hoverColor onClick={() => setIsOpenProgramming(!isOpenProgramming)}/>
+          <Button btnText="Әlavә" border color  top hoverColor onClick={() => setIsOpenProgramming(!isOpenProgramming)}/>
         </> 
            } 
       </ServiceCard>
@@ -67,13 +67,13 @@ export const Service = () => {
           Life Electronics Şirkətinin peşəkar konsaltinq xidməti istifadəçilərin hər zaman müraciət edə biləcəyi, münasib və uyğun həllin yollarını müəyyənləşdirən fundamental biliklərə söykənən, yeniləşən və təkmilləşən çevik bir strukturdur.
           Bura daxil olan sorğuların mahiyyətinə uyğun qaydada mütəxəssislər və ekspertlər cəlb edilə bilir. Bu da sorğunun sürətli emalı və doğru cavab formalaşdırılmasından ötrü güclü zəmindir.
           Kompüterlərin, ofis təşkilat texnikasının, məlumat köşklərinin, videomüşahidə sistemlərinin, işinizlə bağlı ümumi istifadədə olan informasiya texnologiyaları avadanlıqlarının mükəmməl işini təşkil etməkdən ötrü Life Electronics Şirkətinin mütəxəssisləri avadanlıqların nizamlanmasını və onlara müntəzəm xidmət göstərilməsini təşkil etmək üçün kifayət qədər təcrübəyə və ehtiyatlara malikdir.</ServiceCardText>
-        <Button btnText="Close" border color left top hoverColor onClick={() => setIsOpenConsulting(!isOpenConsulting)}/>
+        <Button btnText="Close" border color  top hoverColor onClick={() => setIsOpenConsulting(!isOpenConsulting)}/>
       </>
           :
       <>
         <ServiceImg src={consulting} />
         <ServiceCardTitle>It consulting</ServiceCardTitle>
-        <Button btnText="Әlavә" border color left top hoverColor onClick={() => setIsOpenConsulting(!isOpenConsulting)}/></> 
+        <Button btnText="Әlavә" border color  top hoverColor onClick={() => setIsOpenConsulting(!isOpenConsulting)}/></> 
       } 
         
       </ServiceCard>
