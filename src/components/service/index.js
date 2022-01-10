@@ -40,7 +40,7 @@ export const Service = () => {
 
       <ServiceCard isOpen={isOpenProgramming}>
         {
-        isOpenProgramming ? 
+        isOpenProgramming ?
         <> 
           <ServiceCardText>
             Life Electronics Şirkəti proqram təminatlarının tətbiqi, optimallaşdırılması, qurulmuş mövcud sistemlərdən istifadə prinsipləri barədə əhatəli məlumat və geniş çeşiddə xidmət təqdim etmək iqtidarındadır.
