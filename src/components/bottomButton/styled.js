@@ -17,5 +17,10 @@ export const BottomButtonWrapper = styled.a`
     border: none;
     border-radius: 500px;
     cursor: pointer;
+
+
+    :hover{
+      box-shadow: 0 0 25px black;
+    }
   }
 `;

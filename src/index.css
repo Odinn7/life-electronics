@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  padding: 0;   
-  background-image:  url('/src/assets/images/mainpageBackground.png');
+  padding: 0;
+  background-image: url("/src/assets/images/mainpageBackground.png");
   background-repeat: no-repeat;
   background-size: 1920px 1080px;
 }
