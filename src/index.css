@@ -3,9 +3,58 @@ body {
   padding: 0;
   background-image: url("/src/assets/images/mainpageBackground.png");
   background-repeat: no-repeat;
-  background-size: 1920px 1080px;
+  
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@media(max-width: 1680px){
+  body {
+    width: 1680px;
+    background-size: inherit;
+    background-image: url("/src/assets/images/mainpageBackground.png");
+    background-repeat: no-repeat;
+  }
+}
+@media(max-width: 1440px){
+  body {
+    width: 1680px;
+    background-size: inherit;
+    background-image: url("/src/assets/images/mainpageBackground.png");
+    background-repeat: no-repeat;
+  }
+}
+@media(max-width: 1280px){
+  body {
+    width: 1680px;
+    background-size: inherit;
+    background-image: url("/src/assets/images/mainpageBackground.png");
+    background-repeat: no-repeat;
+  }
+}
+@media(max-width: 1024px){
+  body {
+    width: 1680px;
+    background-size: inherit;
+    background-image: url("/src/assets/images/mainpageBackground.png");
+    background-repeat: no-repeat;
+  }
+}
+@media(max-width: 800px){
+  body {
+    width: 1680px;
+    background-size: inherit;
+    background-image: url("/src/assets/images/mainpageBackground.png");
+    background-repeat: no-repeat;
+  }
+}
+@media(max-width: 480px){
+  body {
+    width: 1680px;
+    background-image: url("/src/assets/images/mainpageBackground.png");
+    background-repeat: no-repeat;
+    background-size: inherit;
+  }
 }
